@@ -355,6 +355,7 @@ var $timez = $("#timez"),
             }
         },
         adBlockerCallback: function () {
+            console.debug(window.gdpAds);
             if (pConf.blockADB && window.gdpAds === false) {
                 jwp.destroy();
                 adblockerMessage();
@@ -1531,6 +1532,7 @@ var $timez = $("#timez"),
             }
         },
         adBlockerCallback: function () {
+            console.debug(window.gdpAds);
             if (pConf.blockADB && window.gdpAds === false) {
                 gdPlyr.destroy();
                 adblockerMessage();
